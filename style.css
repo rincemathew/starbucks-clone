@@ -6,3 +6,26 @@
     --lite-green:#00754a;
     --gray:#edebe9;
 }
+
+body {
+    margin: 0;
+    font-family: SoDoSans_Light,Helvetica,sans-serif;
+}
+
+.common-padding {
+    padding: 0 12px;
+}
+
+.container {
+    padding: 0 7%;
+}
+
+/* sign up */
+.signup-con {
+    background-color: var(--green-dark);
+}
+.sign-up {
+    display: flex;
+    padding: 12px 24px 18px;
+    color: var(--white);
+}
