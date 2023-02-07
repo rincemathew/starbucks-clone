@@ -1,3 +1,7 @@
+@font-face {
+    src: url(font/SoDoSans-Light.ttf);
+    font-family: SoDoSans_Light;
+}
 :root {
     --white:#fff;
     --green:#006241;
@@ -5,6 +9,8 @@
     --green-lite-dark:#0e382c;
     --lite-green:#00754a;
     --gray:#edebe9;
+    --dark:##212536;
+    /* --lite-dark:#212529; */
 }
 
 body {
@@ -20,6 +26,60 @@ body {
     padding: 0 7%;
 }
 
+a{
+    text-decoration: none;
+}
+
+/* navigation */
+.nav-bar {
+    display: flex;
+}
+.nav-bar div:first-child {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.nav-bar div:last-child {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    /* float: right; */
+}
+.nav-bar div:nth-of-type(1) img {
+    height: 40px;
+    width: auto;
+}
+.nav-bar b a {
+    font-size: 14px;
+    border-bottom: 2px solid #00754a;
+}
+.nav-bar a {
+    color: var(--dark);
+    padding: 8px;
+    margin: 16px 0 16px 45px;
+}
+
+.nav-bar input {
+    border-radius: 1.25rem;
+    box-shadow: 0 0 2px #00000012, 0 2px 2px #0000000f, 0 1px 3px #0000001a;
+    border: none;
+    padding: 6px 12px;
+    font-size: 12px;
+    /* font-weight: 400; */
+    /* line-height: 1.5; */
+    width:100%;
+    text-indent: 33px;
+}
+
+.nav-bar div:nth-of-type(2) img {
+    margin-left: 100px;
+    margin-right: 100px;
+    height: 32px;
+    width: auto;
+}
+
+
 /* sign up */
 .signup-con {
     background-color: var(--green-dark);
@@ -28,4 +88,27 @@ body {
     display: flex;
     padding: 12px 24px 18px;
     color: var(--white);
+    align-items: center;
+}
+.sign-up h4 {
+    font-size: 20px;
+    font-weight: 300;
+    width: 100%;
+    margin: 12px 0;
+    /* line-height: 1.2; */
+}
+.sign-up div{
+    /* float: right; */
+    width: 100%;
+}
+.sign-up button {
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    color: #fff;
+    width: 96px;
+    height: 32px;
+    float: right;
+    /* padding: 0; */
+    border-radius: 30px;
+    font-size: 12px;
 }
